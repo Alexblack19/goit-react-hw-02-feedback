@@ -1,8 +1,3 @@
-import { Component } from 'react';
-
-export class Section extends Component {
-  state = { title: 'Please leave feedback' };  
-  render() {    
-    return `<h2>{this.title}</h2>`;
-  }
-}
+export const Section = (props) => {
+  return console.log(props.bad);
+};
