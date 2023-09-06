@@ -1,3 +1,8 @@
-export function Section({ title }) {
-  return <h2>{title}</h2>;
+export function Section({ title, children }) {
+  return (
+    <>
+      <h2>{title}</h2>
+      {children}
+    </>
+  );
 }

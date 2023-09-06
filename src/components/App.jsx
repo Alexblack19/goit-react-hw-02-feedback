@@ -14,18 +14,19 @@ export class App extends Component {
     return (
       <>
         <GlobalStyle />
-        <Section title="Please leave feedback" />
-        <FeedbackOptions
-          good={this.state.good}
-          neutral={this.state.neutral}
-          bad={this.state.bad}
-        />
-        <Statistics
-          title="Statistics"
-          good={this.state.good}
-          neutral={this.state.neutral}
-          bad={this.state.bad}
-        />
+        <Section title="Please leave feedback">
+          <FeedbackOptions
+            good={this.state.good}
+            neutral={this.state.neutral}
+            bad={this.state.bad}
+          />
+          <Statistics
+            title="Statistics"
+            good={this.state.good}
+            neutral={this.state.neutral}
+            bad={this.state.bad}
+          />
+        </Section>
       </>
     );
   }
