@@ -1,9 +1,17 @@
-export function FeedbackOptions({ good, neutral, bad }) {  
+export function FeedbackOptions({ options, handleClick }) {
   return (
-    <>
-      <button>{good}</button>
-      <button>{neutral}</button>
-      <button>{bad}</button>
-    </>
+    <ul>
+      {options.map(item => (
+        <li key={item}>
+          <button
+            type="button"
+            style={{ textTransform: 'capitalize' }}
+            onClick={handleClick}
+          >
+            {item}
+          </button>
+        </li>
+      ))}
+    </ul>
   );
 }

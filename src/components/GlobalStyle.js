@@ -16,7 +16,8 @@ code {
     monospace;
 }
 
-/* h2, 
+h2,
+h3, 
 p {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -27,5 +28,5 @@ ul {
   margin-bottom: 0px;
   padding-left: 0px;
   list-style: none;
-}   */
+}  
 `;
