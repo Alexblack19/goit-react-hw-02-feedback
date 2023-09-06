@@ -1,17 +1,19 @@
-import { Profile } from './Profile/Profile';
-import user from '../data/user';
+import { Component } from 'react';
 import { GlobalStyle } from './GlobalStyle';
+import { Section } from './Section/Section';
 
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',       
-        color: '#010101',
-      }}
-    >
-      <GlobalStyle />
-      <Profile item={user} />     
-    </div>
-  );
-};
+export class App extends Component {  
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0
+  }
+  render() {
+    return (
+      <>
+        <GlobalStyle />
+        <Section />
+      </>
+    );
+  }
+}

@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
-  background-color: #404145;
+  /* background-color: #404145; */
 }
 
 code {
@@ -16,7 +16,7 @@ code {
     monospace;
 }
 
-h2, 
+/* h2, 
 p {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -27,5 +27,5 @@ ul {
   margin-bottom: 0px;
   padding-left: 0px;
   list-style: none;
-}  
+}   */
 `;
