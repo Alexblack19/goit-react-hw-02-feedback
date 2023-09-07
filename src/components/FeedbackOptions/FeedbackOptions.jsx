@@ -1,17 +1,15 @@
+import { List, Button } from './FeedbackOptions.styled';
+
 export function FeedbackOptions({ options, handleClick }) {
   return (
-    <ul>
+    <List>
       {options.map(item => (
         <li key={item}>
-          <button
-            type="button"
-            style={{ textTransform: 'capitalize' }}
-            onClick={handleClick}
-          >
+          <Button type="button" onClick={handleClick}>
             {item}
-          </button>
+          </Button>
         </li>
       ))}
-    </ul>
+    </List>
   );
 }

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`  
@@ -8,7 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
-  /* background-color: #404145; */
+  background-image: url('./coffe.jpg');
+  background-position: 50% 50%; 
+  background-size: cover;    
 }
 
 code {
@@ -29,4 +32,15 @@ ul {
   padding-left: 0px;
   list-style: none;
 }  
+`;
+
+export const Container = styled.div`
+  max-width: 540px;
+  height: 350px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  background-color: #e4eaf0;
+  box-shadow: 5px 5px 5px 0px rgba(179, 179, 179, 1);
 `;

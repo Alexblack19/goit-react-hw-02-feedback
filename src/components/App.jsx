@@ -1,9 +1,8 @@
 import { Component } from 'react';
-import { GlobalStyle } from './GlobalStyle';
+import { Container, GlobalStyle } from './GlobalStyle';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
-// import { Notification } from './Notification/Notification';
 
 export class App extends Component {
   state = {
@@ -44,26 +43,23 @@ export class App extends Component {
 
   render() {
     return (
-      <section>
-        <div>
-          <GlobalStyle />
-          <Section title="Please leave feedback">
-            <FeedbackOptions
-              options={Object.keys(this.state)}
-              handleClick={this.handleClick}
-            />
-            <Statistics
-              title="Statistics"
-              good={this.state.good}
-              neutral={this.state.neutral}
-              bad={this.state.bad}
-              total={this.countTotalFeedback()}
-              positivePercentage={this.countPositiveFeedbackPercentage()}
-            />
-          </Section>
-          {/* <Notification message="There is no feedback" /> */}
-        </div>
-      </section>
+      <Container>
+        <GlobalStyle />
+        <Section title="Please leave feedback">
+          <FeedbackOptions
+            options={Object.keys(this.state)}
+            handleClick={this.handleClick}
+          />
+          <Statistics
+            title="Statistics"
+            good={this.state.good}
+            neutral={this.state.neutral}
+            bad={this.state.bad}
+            total={this.countTotalFeedback()}
+            positivePercentage={this.countPositiveFeedbackPercentage()}
+          />
+        </Section>
+      </Container>
     );
   }
 }

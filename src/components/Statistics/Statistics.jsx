@@ -1,4 +1,5 @@
 import { Notification } from '../Notification/Notification';
+import { Title, Item, Text, NoFeedback} from './Statistics.styled';
 
 export function Statistics({
   title,
@@ -10,38 +11,38 @@ export function Statistics({
 }) {
   return (
     <>
-      <h3>{title}</h3>
+      <Title>{title}</Title>
       {total ? (
         <ul>
-          <li>
-            <p>
+          <Item>
+            <Text>
               Good:&nbsp;<span>{good}</span>
-            </p>
-          </li>
-          <li>
-            <p>
+            </Text>
+          </Item>
+          <Item>
+            <Text>
               Neutral:&nbsp;<span>{neutral}</span>
-            </p>
-          </li>
-          <li>
-            <p>
+            </Text>
+          </Item>
+          <Item>
+            <Text>
               Bad:&nbsp;<span>{bad}</span>
-            </p>
-          </li>
-          <li>
-            <p>
+            </Text>
+          </Item>
+          <Item>
+            <Text>
               Total:&nbsp;<span>{total}</span>
-            </p>
-          </li>
-          <li>
-            <p>
+            </Text>
+          </Item>
+          <Item>
+            <Text>
               Positive feedback:&nbsp;<span>{positivePercentage}&#37;</span>
-            </p>
-          </li>
+            </Text>
+          </Item>
         </ul>
       ) : (
         <>
-          <p>No feedback given</p>
+          <NoFeedback>No feedback given</NoFeedback>
           <Notification message="There is no feedback" />
         </>
       )}
