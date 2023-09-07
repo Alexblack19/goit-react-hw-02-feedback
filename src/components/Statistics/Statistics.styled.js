@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const Title = styled.h3`
   padding: 16px 0px;
+  font-size: 24px;
   text-align: center;
-  color: #515151;
+  color: #051f32;
 `;
 
 export const Item = styled.li`
@@ -14,8 +15,10 @@ export const Item = styled.li`
 
 export const Text = styled.p`
   text-align: center;
+  font-weight: 600;
 `;
 
 export const NoFeedback = styled.p`
   text-align: center;
+  font-weight: 600;
 `;

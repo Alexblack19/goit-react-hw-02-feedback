@@ -40,6 +40,15 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
-  background-color: #e4eaf0;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #ffe1aa 0,
+    #ffd4a7 16.67%,
+    #ffc7a2 33.33%,
+    #f2b99d 50%,
+    #e1ac97 66.67%,
+    #d1a092 83.33%,
+    #c2968d 100%
+  );
   box-shadow: 5px 5px 5px 0px rgba(179, 179, 179, 1);
 `;

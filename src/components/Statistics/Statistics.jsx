@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 import { Notification } from '../Notification/Notification';
-import { Title, Item, Text, NoFeedback} from './Statistics.styled';
+import { Title, Item, Text, NoFeedback } from './Statistics.styled';
 
 export function Statistics({
   title,
@@ -49,3 +50,12 @@ export function Statistics({
     </>
   );
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};
