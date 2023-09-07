@@ -25,10 +25,19 @@ export class App extends Component {
   }
 
   handleClick = e => {
-    for (const keyObj in this.state) {     
-      if (e.target.textContent === keyObj) {      
-        this.setState(prev => ({ keyObj: prev.keyObj + 1 }));
-      }
+    const clicktext = e.target.textContent;
+    switch (clicktext) {
+      case 'good':
+        this.setState(prevState => ({ good: prevState.good + 1 }));
+        break;
+      case 'neutral':
+        this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
+        break;
+      case 'bad':
+        this.setState(prevState => ({ bad: prevState.bad + 1 }));
+        break;
+      default:
+        return;
     }
   };
 
