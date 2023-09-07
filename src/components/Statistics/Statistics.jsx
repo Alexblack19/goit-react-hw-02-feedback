@@ -1,3 +1,5 @@
+import { Notification } from '../Notification/Notification';
+
 export function Statistics({
   title,
   good,
@@ -9,7 +11,7 @@ export function Statistics({
   return (
     <>
       <h3>{title}</h3>
-      {good || neutral || bad ? (
+      {total ? (
         <ul>
           <li>
             <p>
@@ -38,7 +40,10 @@ export function Statistics({
           </li>
         </ul>
       ) : (
-        <p>No feedback given</p>
+        <>
+          <p>No feedback given</p>
+          <Notification message="There is no feedback" />
+        </>
       )}
     </>
   );

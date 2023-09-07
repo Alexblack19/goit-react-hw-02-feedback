@@ -1,3 +1,5 @@
+import Notiflix from 'notiflix';
+
 export function Notification({message}) {   
-  return alert(message);
+  return Notiflix.Notify.failure(message);
 }
