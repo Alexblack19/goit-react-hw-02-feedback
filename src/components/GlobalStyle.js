@@ -9,9 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
-  background-image: url('./coffe.jpg');
-  background-position: 50% 50%; 
-  background-size: cover;    
+  background-image: url('https://cdn.wallpapersafari.com/23/0/98zDiH.jpg');  
+  background-position: 50% 50%;  
 }
 
 code {
