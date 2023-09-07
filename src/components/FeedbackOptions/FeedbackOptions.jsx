@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { List, Button } from './FeedbackOptions.styled';
 
 export function FeedbackOptions({ options, handleClick }) {
@@ -13,3 +14,7 @@ export function FeedbackOptions({ options, handleClick }) {
     </List>
   );
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+};
