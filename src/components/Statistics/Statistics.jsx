@@ -9,26 +9,36 @@ export function Statistics({
   return (
     <>
       <h3>{title}</h3>
-      {(!title && !good && !neutral) ? (
+      {good || neutral || bad ? (
         <ul>
           <li>
-            <p>Good:&nbsp;{good}</p>
+            <p>
+              Good:&nbsp;<span>{good}</span>
+            </p>
           </li>
           <li>
-            <p>Neutral:&nbsp;{neutral}</p>
+            <p>
+              Neutral:&nbsp;<span>{neutral}</span>
+            </p>
           </li>
           <li>
-            <p>Bad:&nbsp;{bad}</p>
+            <p>
+              Bad:&nbsp;<span>{bad}</span>
+            </p>
           </li>
           <li>
-            <p>Total:&nbsp;{total}</p>
+            <p>
+              Total:&nbsp;<span>{total}</span>
+            </p>
           </li>
           <li>
-            <p>Positive feedback:&nbsp;{positivePercentage}%</p>
+            <p>
+              Positive feedback:&nbsp;<span>{positivePercentage}&#37;</span>
+            </p>
           </li>
         </ul>
       ) : (
-        <p>dggsgsdg</p>
+        <p>No feedback given</p>
       )}
     </>
   );
