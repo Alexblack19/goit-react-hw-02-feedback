@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 import 'modern-normalize';
+import backgroundImage from '../image/coffe.webp';
 
 export const GlobalStyle = createGlobalStyle`  
 body {  
@@ -9,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
-  background-image: url('https://cdn.wallpapersafari.com/23/0/98zDiH.jpg');  
+  background-image: url(${backgroundImage});  
   background-position: 50% 50%;  
 }
 
