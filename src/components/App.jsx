@@ -27,7 +27,7 @@ export class App extends Component {
   handleClick = e => {
     const btnText = e.target.textContent;
     switch (btnText) {
-      case 'good':            
+      case 'good':
         this.setState(prevState => ({ good: prevState.good + 1 }));
         break;
       case 'neutral':
