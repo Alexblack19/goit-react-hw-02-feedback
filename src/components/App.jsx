@@ -28,10 +28,10 @@ export class App extends Component {
     const btnText = e.target.textContent;
     switch (btnText) {
       case 'good':
-        this.setState(prevState => ({ good: prevState.good + 1 }));
+        this.setState(({good}) => ({ good: good + 1 }));
         break;
       case 'neutral':
-        this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
+        this.setState(({neutral}) => ({ neutral: neutral + 1 }));
         break;
       case 'bad':
         this.setState(prevState => ({ bad: prevState.bad + 1 }));
